@@ -19,6 +19,6 @@ function doTryCatch() {
   try {
     var build = 1;
   } catch (e) {
-    var f = build;
+    let f = build;
   }
 }
