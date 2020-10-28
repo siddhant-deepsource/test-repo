@@ -6,7 +6,7 @@
     "node": true
   },
   "plugins": ["security"],
-  "extends": ["plugin:security/recommended", "eslint:recommended"],
+  "extends": ["plugin:security/recommended"],
   "parserOptions": {
     "ecmaVersion": 12
   },
