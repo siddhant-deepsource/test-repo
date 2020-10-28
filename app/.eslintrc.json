@@ -11,6 +11,7 @@
     "ecmaVersion": 12
   },
   "rules": {
-    "security/detect-eval-with-expression": "error"
+    "security/detect-eval-with-expression": "error",
+    "security/detect-new-buffer": "error"
   }
 }
