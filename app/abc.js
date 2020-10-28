@@ -22,7 +22,8 @@ function doTryCatch() {
     var f = build;
   }
 }
-
+k.readUInt8(0, false);
+var a = new RegExp(\'ab+c\', \'i\')
 var path = "user input";
 child_process.exec("ls -l " + path, function (err, data) {
   console.log(data);
