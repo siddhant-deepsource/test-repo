@@ -1,4 +1,3 @@
-var a = require(\'b\');
-
+var a = require("b");
 
 var d = new Buffer(c);
