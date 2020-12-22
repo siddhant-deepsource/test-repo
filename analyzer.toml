@@ -15,10 +15,10 @@ trigger = "code"
 processors = ["source_code_load", "skip_cq"]
 
 # Analyzer Resources Details
-min_cpu_limit = "3000"
-max_cpu_limit = "4800"
-min_memory_limit = "4501"
-max_memory_limit = "6501"
+min_cpu_limit = 3000
+max_cpu_limit = 4800
+min_memory_limit = 4501
+max_memory_limit = 6501
 
 # Analyzer Params
 meta_schema_path = "/app/.deepsource/meta_schema.json"
