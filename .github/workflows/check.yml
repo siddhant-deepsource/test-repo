@@ -1,0 +1,12 @@
+name: Check Analyzer TOML
+
+on:
+  push:
+    paths: 
+      - 'analyzer.toml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: siddhant-deepsource/lestrade
