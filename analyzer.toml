@@ -1,5 +1,5 @@
 # Analyzer Profile
-category = "langs"
+category = "lang"
 name = "Go"
 shortcode = "go"
 version = "0.6.14"
@@ -12,7 +12,7 @@ discuss_url = "https://discuss.deepsource.io/tag/go"
 analysis_command = "/app/marvin-go"
 autofix_command = "/app/autofix"
 trigger = "code"
-processors = ["source_code_load", "skip_cq"]
+processors = ["source_code_loadh", "skip_cq"]
 
 # Analyzer Resources Details
 min_cpu_limit = 3000
