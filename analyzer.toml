@@ -1,5 +1,5 @@
 # Analyzer Profile
-category = "lang"
+category = "langs"
 name = "Go"
 shortcode = "go"
 version = "0.6.14"
