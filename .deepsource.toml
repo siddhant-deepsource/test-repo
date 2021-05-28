@@ -4,9 +4,6 @@ version = 1
 name = "javascript"
 enabled = true
 
-  [analyzers.meta]
-  module_system = "commonjs"
-  environment = ["nodejs"]
-  dependency_file_paths = [
-  "app/"
-  ]
+[[transformers]]
+name = "prettier"
+enabled = true
