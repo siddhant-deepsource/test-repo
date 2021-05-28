@@ -1728,8 +1728,7 @@
       ul: [],
     },
     Ce = /^(?:(?:https?|mailto|ftp|tel|file):|[^&:/?#]*(?:[/?#]|$))/gi,
-    Te =
-      /^data:(?:image\/(?:bmp|gif|jpeg|jpg|png|tiff|webp)|video\/(?:mpeg|mp4|ogg|webm)|audio\/(?:mp3|oga|ogg|opus));base64,[a-z0-9+/]+=*$/i;
+    Te = /^data:(?:image\/(?:bmp|gif|jpeg|jpg|png|tiff|webp)|video\/(?:mpeg|mp4|ogg|webm)|audio\/(?:mp3|oga|ogg|opus));base64,[a-z0-9+/]+=*$/i;
   function Se(t, s, e) {
     if (0 === t.length) return t;
     if (e && "function" == typeof e) return e(t);
@@ -2705,11 +2704,9 @@
         }),
         (t._activate = function (t, e, n) {
           var i = this,
-            o = (
-              !e || ("UL" !== e.nodeName && "OL" !== e.nodeName)
-                ? g(e).children(Fn)
-                : g(e).find(Un)
-            )[0],
+            o = (!e || ("UL" !== e.nodeName && "OL" !== e.nodeName)
+              ? g(e).children(Fn)
+              : g(e).find(Un))[0],
             r = n && o && g(o).hasClass(jn),
             s = function () {
               return i._transitionComplete(t, o, n);
