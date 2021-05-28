@@ -2267,14 +2267,15 @@
           var r = f.eventTime;
           if ((d & h) === h) {
             null !== m &&
-              (m = m.next = {
-                eventTime: r,
-                lane: 0,
-                tag: f.tag,
-                payload: f.payload,
-                callback: f.callback,
-                next: null,
-              });
+              (m = m.next =
+                {
+                  eventTime: r,
+                  lane: 0,
+                  tag: f.tag,
+                  payload: f.payload,
+                  callback: f.callback,
+                  next: null,
+                });
             a: {
               var n = a,
                 t = f;
@@ -3053,13 +3054,14 @@
           var l = k.lane;
           if ((ic & l) === l)
             null !== h &&
-              (h = h.next = {
-                lane: 0,
-                action: k.action,
-                eagerReducer: k.eagerReducer,
-                eagerState: k.eagerState,
-                next: null,
-              }),
+              (h = h.next =
+                {
+                  lane: 0,
+                  action: k.action,
+                  eagerReducer: k.eagerReducer,
+                  eagerState: k.eagerState,
+                  next: null,
+                }),
               (d = k.eagerReducer === a ? k.eagerState : a(d, k.action));
           else {
             var n = {
@@ -5808,11 +5810,21 @@
     function Uj(a, b, c, d) {
       this.tag = a;
       this.key = c;
-      this.sibling = this.child = this.return = this.stateNode = this.type = this.elementType = null;
+      this.sibling =
+        this.child =
+        this.return =
+        this.stateNode =
+        this.type =
+        this.elementType =
+          null;
       this.index = 0;
       this.ref = null;
       this.pendingProps = b;
-      this.dependencies = this.memoizedState = this.updateQueue = this.memoizedProps = null;
+      this.dependencies =
+        this.memoizedState =
+        this.updateQueue =
+        this.memoizedProps =
+          null;
       this.mode = d;
       this.flags = 0;
       this.lastEffect = this.firstEffect = this.nextEffect = null;
@@ -5960,7 +5972,11 @@
     function Wj(a, b, c) {
       this.tag = b;
       this.containerInfo = a;
-      this.finishedWork = this.pingCache = this.current = this.pendingChildren = null;
+      this.finishedWork =
+        this.pingCache =
+        this.current =
+        this.pendingChildren =
+          null;
       this.timeoutHandle = -1;
       this.pendingContext = this.context = null;
       this.hydrate = c;
@@ -5968,7 +5984,14 @@
       this.callbackPriority = 0;
       this.eventTimes = ge(0);
       this.expirationTimes = ge(-1);
-      this.entangledLanes = this.finishedLanes = this.mutableReadLanes = this.expiredLanes = this.pingedLanes = this.suspendedLanes = this.pendingLanes = 0;
+      this.entangledLanes =
+        this.finishedLanes =
+        this.mutableReadLanes =
+        this.expiredLanes =
+        this.pingedLanes =
+        this.suspendedLanes =
+        this.pendingLanes =
+          0;
       this.entanglements = ge(0);
       this.mutableSourceEagerHydrationData = null;
     }
@@ -6135,7 +6158,8 @@
         "undefined" === typeof window.document ||
         "undefined" === typeof window.document.createElement
       ),
-      mi = /^[:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD][:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD\-.0-9\u00B7\u0300-\u036F\u203F-\u2040]*$/,
+      mi =
+        /^[:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD][:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD\-.0-9\u00B7\u0300-\u036F\u203F-\u2040]*$/,
       Af = Object.prototype.hasOwnProperty,
       Cf = {},
       Bf = {},
@@ -6428,9 +6452,10 @@
       Rb = new Map(),
       Sb = new Map(),
       Vb = [],
-      gg = "mousedown mouseup touchcancel touchend touchstart auxclick dblclick pointercancel pointerdown pointerup dragend dragstart drop compositionend compositionstart keydown keypress keyup input textInput copy cut paste click change contextmenu reset submit".split(
-        " "
-      ),
+      gg =
+        "mousedown mouseup touchcancel touchend touchstart auxclick dblclick pointercancel pointerdown pointerup dragend dragstart drop compositionend compositionstart keydown keypress keyup input textInput copy cut paste click change contextmenu reset submit".split(
+          " "
+        ),
       lb = {
         animationend: Lc("Animation", "AnimationEnd"),
         animationiteration: Lc("Animation", "AnimationIteration"),
@@ -6811,9 +6836,10 @@
       "onCompositionUpdate",
       "compositionupdate focusout keydown keypress keyup mousedown".split(" ")
     );
-    var pc = "abort canplay canplaythrough durationchange emptied encrypted ended error loadeddata loadedmetadata loadstart pause play playing progress ratechange seeked seeking stalled suspend timeupdate volumechange waiting".split(
-        " "
-      ),
+    var pc =
+        "abort canplay canplaythrough durationchange emptied encrypted ended error loadeddata loadedmetadata loadstart pause play playing progress ratechange seeked seeking stalled suspend timeupdate volumechange waiting".split(
+          " "
+        ),
       Eg = new Set(
         "cancel close invalid load scroll toggle".split(" ").concat(pc)
       ),
