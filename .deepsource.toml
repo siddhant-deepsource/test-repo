@@ -4,6 +4,5 @@ version = 1
 name = "javascript"
 enabled = true
 
-[[transformers]]
-name = "prettier"
+transformers = "prettier"
 enabled = true
